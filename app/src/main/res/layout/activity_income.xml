@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.easywallet.IncomeActivity">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="16dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_centerHorizontal="true"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@mipmap/ic_launcher"/>
+        <EditText
+            android:id="@+id/edit_des"
+            android:layout_below="@id/image_add"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="รายละเอียด"/>
+        <EditText
+            android:id="@+id/edit_cost"
+            android:layout_below="@id/edit_des"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="จำนวนเงิน"/>
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_below="@id/edit_cost"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="บันทึก"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/text_des"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="18dp"
+        android:text="ออมเงิน"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:id="@+id/text_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="30,000,000"
+        android:textSize="12dp" />
+
+</LinearLayout>
